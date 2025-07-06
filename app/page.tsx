@@ -1,103 +1,174 @@
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
+export default function page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        {/* Header Section */}
+        <div className="bg-white shadow-sm rounded-lg p-8 mb-8">
+          <div className="border-l-4 border-blue-600 pl-6 mb-6">
+            <p className="text-sm text-gray-600 mb-2">
+              Your privacy is important. As of July 6, 2025 we have updated our
+              Privacy Policy to include additional detail about our data
+              processing.
+            </p>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="text-center">
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">
+              Tigrina Kids Bible Privacy Policy
+            </h1>
+            <p className="text-gray-600">Effective as of July 6, 2025</p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Main Content */}
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden">
+          <div className="px-8 py-6">
+            <div className="prose max-w-none">
+              {/* Section 1 */}
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                  <span className="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                    1
+                  </span>
+                  Information We Don't Collect
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  We do not collect, store, or share any personal information
+                  from users of this app. We do not require account creation,
+                  email addresses, or any personal details.
+                </p>
+              </div>
+
+              {/* Section 2 */}
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                  <span className="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                    2
+                  </span>
+                  Device Information
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  This app does not access or collect device information such as
+                  your device ID, IP address, or location data.
+                </p>
+              </div>
+
+              {/* Section 3 */}
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                  <span className="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                    3
+                  </span>
+                  Usage Analytics
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  We do not track how you use the app or collect analytics about
+                  your Bible reading habits.
+                </p>
+              </div>
+
+              {/* Section 4 */}
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                  <span className="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                    4
+                  </span>
+                  Third-Party Services
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  This app does not integrate with any third-party analytics,
+                  advertising, or tracking services.
+                </p>
+              </div>
+
+              {/* Section 5 */}
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                  <span className="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                    5
+                  </span>
+                  Local Storage Only
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  After loading the PDF for the first time, it will be cached
+                  locally on your device and not transmitted to our servers.
+                </p>
+              </div>
+
+              {/* Section 6 */}
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                  <span className="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                    6
+                  </span>
+                  Internet Connection
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  This app requires an internet connection initially for loading
+                  the PDF content.
+                </p>
+              </div>
+
+              {/* Section 7 */}
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                  <span className="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                    7
+                  </span>
+                  Children's Privacy
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  Since we collect no information whatsoever, this app is safe
+                  for users of all ages.
+                </p>
+              </div>
+
+              {/* Section 8 */}
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                  <span className="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                    8
+                  </span>
+                  Changes to This Policy
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  If we ever change our data practices, we will update this
+                  policy and the app listing.
+                </p>
+              </div>
+
+              {/* Contact Section */}
+              <div className="bg-gray-50 rounded-lg p-6 mt-8">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                  <span className="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                    9
+                  </span>
+                  Contact Us
+                </h2>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  If you have questions about this privacy policy, contact us
+                  at:
+                </p>
+                <div className="bg-white rounded-md p-4 border border-gray-200">
+                  <a
+                    href="mailto:leo.ragual@ragpiestudio.com"
+                    className="text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    leo.ragual@ragpiestudio.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="text-center mt-8 text-gray-500 text-sm">
+          <p>© 2025 Tigrina Kids Bible. All rights reserved.</p>
+        </div>
+      </div>
     </div>
   );
 }
